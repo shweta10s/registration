@@ -1,0 +1,50 @@
+<%- include("./partials/header") %>
+    <!--  -->
+    <div class="h-screen w-screen flex flex-col gap-5 justify-center items-center">
+        <!--  -->
+        <%- include("./partials/nav") %>
+            <!--  -->
+
+            <h1 class="text-center text-3xl">Registration Page</h1>
+
+
+            <form action="/registration" method="POST"
+                class="h-2/3 w-3/4 bg-red-300 flex flex-col justify-center items-center">
+
+                <div class="part1 w-full h-4/5 flex justify-center items-center">
+
+                    <div class="left h-full w-1/2 flex flex-col justify-between items-center p-5">
+                        
+                        <input class="w-2/3 bg-zinc-100 p-2" type="text" id="firstname" name="firstname" placeholder="First Name">
+
+                        <input class="w-2/3 bg-zinc-100 p-2" type="email" id="email" name="email" placeholder="Email ID">
+
+                        <input class="w-2/3 bg-zinc-100 p-2" type="number" id="phone" name="phone" placeholder="Phone No">
+
+                        <input class="w-2/3 bg-zinc-100 p-2" type="password" id="password" name="password" placeholder="Password">
+
+                    </div>
+                    <div class="right h-full w-1/2 flex flex-col justify-between items-center p-5">
+                        <input class="w-2/3 bg-zinc-100 p-2" type="text" id="lastname" name="lastname" placeholder="Last Name">
+
+                        <div class="w-2/3 py-2 flex justify-left items-center gap-4">
+
+                            <input class="" type="radio" id="gender" name="gender" value="male">
+                        <span>Male</span>
+
+                        <input class="" type="radio" id="gender" name="gender" value="female">
+                        <span>Female</span>
+                        </div>
+
+                        <input class="w-2/3 bg-zinc-100 p-2" type="number" id="age" name="age" placeholder="Age">
+
+                        <input class="w-2/3 bg-zinc-100 p-2" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <button class="px-5 py-2 mt-2 bg-white border-2 border-white hover:bg-red-300  rounded text-xl">Submit</button>
+            </form>
+
+    </div>
+    <!--  -->
+    <%- include("./partials/footer") %>
